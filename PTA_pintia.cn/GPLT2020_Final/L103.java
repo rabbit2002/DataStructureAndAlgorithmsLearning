@@ -1,3 +1,5 @@
+package GPLT2020_Final;
+
 import java.util.Scanner;
 
 /**
