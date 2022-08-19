@@ -11,44 +11,42 @@ public class E382 {
         System.out.println(obj.getRandom());
         System.out.println(obj.getRandom());
     }
+}
 
-    static class Solution {
-        List<Integer> list = null;
-        Random random = null;
+class Solution {
+    List<Integer> list = null;
+    Random random = null;
 
-        public Solution(ListNode head) {
-            ListNode node = head;
+    public Solution(ListNode head) {
+        ListNode node = head;
 
-            list = new ArrayList<>();
-            random = new Random();
+        list = new ArrayList<>();
+        random = new Random();
 
-            while (node != null) {
-                list.add(node.val);
-                node = node.next;
-            }
-        }
-
-        public int getRandom() {
-            return list.get(random.nextInt(list.size()));
+        while (node != null) {
+            list.add(node.val);
+            node = node.next;
         }
     }
 
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
+    public int getRandom() {
+        return list.get(random.nextInt(list.size()));
     }
 }
 
+class ListNode {
+    int val;
+    ListNode next;
 
+    ListNode() {
+    }
+
+    ListNode(int val) {
+        this.val = val;
+    }
+
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
+}

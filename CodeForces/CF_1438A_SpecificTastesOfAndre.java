@@ -6,7 +6,7 @@ public class CF_1438A_SpecificTastesOfAndre {
         int count = scanner.nextInt();
         for (int i = 0; i < count; i++) {
             int number = scanner.nextInt();
-            int sumNeed = (int)Math.pow(2, number);
+            int sumNeed = (int) Math.pow(2, number);
             int sum = 0;
             for (int j = 0; j < number; j++) {
                 System.out.print(1);

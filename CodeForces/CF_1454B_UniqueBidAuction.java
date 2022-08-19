@@ -42,4 +42,3 @@ public class CF_1454B_UniqueBidAuction {
         }
     }
 }
-

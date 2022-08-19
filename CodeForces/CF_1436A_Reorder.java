@@ -8,7 +8,7 @@ public class CF_1436A_Reorder {
             int n = scanner.nextInt();
             int m = scanner.nextInt();
             int[] arr = new int[n];
-            //arr an
+            // arr an
             for (int j = 0; j < n; j++) {
                 arr[j] = scanner.nextInt();
             }

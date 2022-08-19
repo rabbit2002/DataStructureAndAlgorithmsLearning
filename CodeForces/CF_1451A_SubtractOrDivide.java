@@ -8,35 +8,26 @@ public class CF_1451A_SubtractOrDivide {
         int count = scanner.nextInt();
         for (int i = 0; i < count; i++) {
             int number = scanner.nextInt();
-            int step = 0;
-            while (number != 1) {
-                int flag = main.judgePrime(number)[0];
-                int temp = main.judgePrime(number)[1];
-                if (flag == 1) {
-                    number--;
-                } else {
-                    number = temp;
-                }
-                step++;
+            if (number == 1) {
+                System.out.println(0);
+                continue;
             }
-            System.out.println(step);
-        }
-    }
-
-    // int[] [0]=boolean isPrime 0=false 1=ture [1]=what is the max gcd
-    // public boolean judgePrime(int integer) {
-    public int[] judgePrime(int integer) {
-        if (integer == 1) {
-            // return false;
-            return new int[]{0, -1};
-        }
-        for (int i = 2; i <= Math.sqrt(integer); i++) {
-            if (integer % i == 0) {
-                // return false;
-                return new int[]{0, i};
+            if (number == 2) {
+                System.out.println(1);
+                continue;
+            }
+            if (number == 3) {
+                System.out.println(2);
+                continue;
+            }
+            if (number % 2 == 1) {
+                System.out.println(3);
+                continue;
+            }
+            if (number % 2 == 0) {
+                System.out.println(2);
+                continue;
             }
         }
-        // return true;
-        return new int[]{1, -1};
     }
 }

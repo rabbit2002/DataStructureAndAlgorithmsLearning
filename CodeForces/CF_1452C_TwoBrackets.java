@@ -10,7 +10,7 @@ public class CF_1452C_TwoBrackets {
             int parentheses = 0;
             int brackets = 0;
             int sum = 0;
-            // (-40  )-41  [-91  ]-93
+            // (-40 )-41 [-91 ]-93
             for (int j = 0; j < strArr.length; j++) {
                 if (strArr[j] == 40) {
                     parentheses++;
