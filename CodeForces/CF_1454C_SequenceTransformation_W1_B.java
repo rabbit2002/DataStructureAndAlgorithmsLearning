@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-public class CF_1454C_SequenceTransformation_B {
+public class CF_1454C_SequenceTransformation_W1_B {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

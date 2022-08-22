@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LC655_printBinaryTree",
+            "request": "launch",
+            "mainClass": "LC655_printBinaryTree",
+            "projectName": "DataStructureAndAlgorithmsLearning_83875244"
+        },
+        {
+            "type": "java",
             "name": "Launch E382",
             "request": "launch",
             "mainClass": "E382",
