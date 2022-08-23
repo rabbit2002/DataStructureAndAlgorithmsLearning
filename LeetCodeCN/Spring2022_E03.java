@@ -11,7 +11,7 @@ public class Spring2022_E03 {
         q11.right.right = new TreeNode(3);
         q11.right.right.right = new TreeNode(4);
         q11.right.right.right.right = new TreeNode(5);
-        int[][] q12 = new int[][]{new int[]{1, 2, 4}, new int[]{1, 1, 3}, new int[]{0, 3, 5}};
+        int[][] q12 = new int[][] { new int[] { 1, 2, 4 }, new int[] { 1, 1, 3 }, new int[] { 0, 3, 5 } };
         int a1 = new Spring2022_E03().getNumber(q11, q12);
         System.out.println(a1);
 
@@ -21,7 +21,8 @@ public class Spring2022_E03 {
         q21.left.left = new TreeNode(1);
         q21.right.left = new TreeNode(5);
         q21.right.left.right = new TreeNode(6);
-        int[][] q22 = new int[][]{new int[]{0, 2, 2}, new int[]{1, 1, 5}, new int[]{0, 4, 5}, new int[]{1, 5, 7}};
+        int[][] q22 = new int[][] { new int[] { 0, 2, 2 }, new int[] { 1, 1, 5 }, new int[] { 0, 4, 5 },
+                new int[] { 1, 5, 7 } };
         int a2 = new Spring2022_E03().getNumber(q21, q22);
         System.out.println(a2);
     }
@@ -66,14 +67,14 @@ public class Spring2022_E03 {
             print(node.right);
         }
     }
-}
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+    static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
 
-    TreeNode(int x) {
-        val = x;
+        TreeNode(int x) {
+            val = x;
+        }
     }
 }
