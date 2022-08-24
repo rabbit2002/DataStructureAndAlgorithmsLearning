@@ -2,17 +2,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class E417 {
+public class LC417_pacificAtlanticWaterFlow_A1 {
     public static void main(String[] args) {
-        List<List<Integer>> a1 = new E417().pacificAtlantic(
-                new int[][]{
-                        new int[]{1, 2, 2, 3, 5},
-                        new int[]{3, 2, 3, 4, 4},
-                        new int[]{2, 4, 5, 3, 1},
-                        new int[]{6, 7, 1, 4, 5},
-                        new int[]{5, 1, 1, 2, 4},
-                }
-        );
+        List<List<Integer>> a1 = new LC417_pacificAtlanticWaterFlow_A1().pacificAtlantic(
+                new int[][] {
+                        new int[] { 1, 2, 2, 3, 5 },
+                        new int[] { 3, 2, 3, 4, 4 },
+                        new int[] { 2, 4, 5, 3, 1 },
+                        new int[] { 6, 7, 1, 4, 5 },
+                        new int[] { 5, 1, 1, 2, 4 },
+                });
 
         System.out.println(Arrays.deepToString(a1.toArray()));
     }
@@ -36,11 +35,11 @@ public class E417 {
             for (int j = 0; j < n; j++) {
                 if (i == 0 || j == 0) {
                     res1[i][j] = true;
-                    start1.add(new Integer[]{i, j});
+                    start1.add(new Integer[] { i, j });
                 }
                 if (i == m - 1 || j == n - 1) {
                     res2[i][j] = true;
-                    start2.add(new Integer[]{i, j});
+                    start2.add(new Integer[] { i, j });
                 }
             }
         }
@@ -64,7 +63,7 @@ public class E417 {
         return ans;
     }
 
-    int[][] dirs = new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+    int[][] dirs = new int[][] { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
 
     void bfs(ArrayList<Integer[]> start, boolean[][] res) {
         while (start.size() > 0) {
@@ -92,7 +91,7 @@ public class E417 {
                     continue;
                 }
                 // 添加下个点
-                start.add(new Integer[]{toX, toY});
+                start.add(new Integer[] { toX, toY });
                 // set visited
                 res[toX][toY] = true;
             }

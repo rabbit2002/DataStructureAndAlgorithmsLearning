@@ -2,17 +2,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class E417A2 {
+public class LC417_pacificAtlanticWaterFlow_A2 {
     public static void main(String[] args) {
-        List<List<Integer>> a1 = new E417A2().pacificAtlantic(
-                new int[][]{
-                        new int[]{1, 2, 2, 3, 5},
-                        new int[]{3, 2, 3, 4, 4},
-                        new int[]{2, 4, 5, 3, 1},
-                        new int[]{6, 7, 1, 4, 5},
-                        new int[]{5, 1, 1, 2, 4},
-                }
-        );
+        List<List<Integer>> a1 = new LC417_pacificAtlanticWaterFlow_A2().pacificAtlantic(
+                new int[][] {
+                        new int[] { 1, 2, 2, 3, 5 },
+                        new int[] { 3, 2, 3, 4, 4 },
+                        new int[] { 2, 4, 5, 3, 1 },
+                        new int[] { 6, 7, 1, 4, 5 },
+                        new int[] { 5, 1, 1, 2, 4 },
+                });
 
         System.out.println(Arrays.deepToString(a1.toArray()));
     }
@@ -61,7 +60,7 @@ public class E417A2 {
         return ans;
     }
 
-    int[][] dirs = new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+    int[][] dirs = new int[][] { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
 
     void dfs(int x, int y, boolean[][] res) {
         res[x][y] = true;
@@ -75,15 +74,15 @@ public class E417A2 {
                 continue;
             }
 
-            if (res[toX][toY]){
+            if (res[toX][toY]) {
                 continue;
             }
 
-            if (height[x][y]> height[toX][toY]){
+            if (height[x][y] > height[toX][toY]) {
                 continue;
             }
 
-            dfs(toX,toY,res);
+            dfs(toX, toY, res);
         }
     }
 }

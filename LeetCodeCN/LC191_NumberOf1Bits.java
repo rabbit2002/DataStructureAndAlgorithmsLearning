@@ -1,13 +1,13 @@
-public class E191_NumberOf1Bits {
+public class LC191_NumberOf1Bits {
     public static void main(String[] args) {
         // 3
-        System.out.println(new E191_NumberOf1Bits().hammingWeight(0b00000000000000000000000000001011));
+        System.out.println(new LC191_NumberOf1Bits().hammingWeight(0b00000000000000000000000000001011));
         // 1
-        System.out.println(new E191_NumberOf1Bits().hammingWeight(0b00000000000000000000000010000000));
+        System.out.println(new LC191_NumberOf1Bits().hammingWeight(0b00000000000000000000000010000000));
         // 31
-        System.out.println(new E191_NumberOf1Bits().hammingWeight(0b11111111111111111111111111111101));
+        System.out.println(new LC191_NumberOf1Bits().hammingWeight(0b11111111111111111111111111111101));
         // 32
-        System.out.println(new E191_NumberOf1Bits().hammingWeight(0b11111111111111111111111111111111));
+        System.out.println(new LC191_NumberOf1Bits().hammingWeight(0b11111111111111111111111111111111));
     }
 
     /**

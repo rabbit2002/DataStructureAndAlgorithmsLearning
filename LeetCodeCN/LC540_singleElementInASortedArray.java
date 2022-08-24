@@ -1,6 +1,6 @@
-public class E540 {
+public class LC540_singleElementInASortedArray {
     public static void main(String[] args) {
-        System.out.println(new E540().singleNonDuplicate(new int[]{1,1,2,3,3}));
+        System.out.println(new LC540_singleElementInASortedArray().singleNonDuplicate(new int[] { 1, 1, 2, 3, 3 }));
     }
 
     public int singleNonDuplicate(int[] nums) {

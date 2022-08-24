@@ -1,15 +1,9 @@
-/**
- * https://leetcode-cn.com/problems/island-perimeter/
- *
- * @author RABBIT2002
- * @date 2021/3/18
- */
-public class E463 {
+public class LC463_islandPerimeter {
 
     public static void main(String[] args) {
         System.out.println(
-                new E463().islandPerimeter(
-                        new int[][]{{0, 1, 0, 0}, {1, 1, 1, 0}, {0, 1, 0, 0}, {1, 1, 0, 0}}));
+                new LC463_islandPerimeter().islandPerimeter(
+                        new int[][] { { 0, 1, 0, 0 }, { 1, 1, 1, 0 }, { 0, 1, 0, 0 }, { 1, 1, 0, 0 } }));
     }
 
     /**

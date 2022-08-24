@@ -1,13 +1,13 @@
 import java.util.*;
 
-public class E71_SimplifyPath {
+public class LC71_SimplifyPath {
     public static void main(String[] args) {
         // /home
-        System.out.println(new E71_SimplifyPath().simplifyPath("/home/"));
+        System.out.println(new LC71_SimplifyPath().simplifyPath("/home/"));
         // /
-        System.out.println(new E71_SimplifyPath().simplifyPath("/../"));
+        System.out.println(new LC71_SimplifyPath().simplifyPath("/../"));
         // /home/foo
-        System.out.println(new E71_SimplifyPath().simplifyPath("/home//foo/"));
+        System.out.println(new LC71_SimplifyPath().simplifyPath("/home//foo/"));
     }
 
     public String simplifyPath(String path) {

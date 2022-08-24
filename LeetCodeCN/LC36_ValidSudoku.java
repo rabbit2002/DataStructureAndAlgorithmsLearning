@@ -1,9 +1,9 @@
 import java.util.Hashtable;
 
-public class E36_ValidSudoku {
+public class LC36_ValidSudoku {
     public static void main(String[] args) {
         // true
-        System.out.println(new E36_ValidSudoku().isValidSudoku(new char[][] {
+        System.out.println(new LC36_ValidSudoku().isValidSudoku(new char[][] {
                 new char[] { '5', '3', '.', '.', '7', '.', '.', '.', '.' },
                 new char[] { '6', '.', '.', '1', '9', '5', '.', '.', '.' },
                 new char[] { '.', '9', '8', '.', '.', '.', '.', '6', '.' },
@@ -15,7 +15,7 @@ public class E36_ValidSudoku {
                 new char[] { '.', '.', '.', '.', '8', '.', '.', '7', '9' },
         }));
         // false
-        System.out.println(new E36_ValidSudoku().isValidSudoku(new char[][] {
+        System.out.println(new LC36_ValidSudoku().isValidSudoku(new char[][] {
                 new char[] { '8', '3', '.', '.', '7', '.', '.', '.', '.' },
                 new char[] { '6', '.', '.', '1', '9', '5', '.', '.', '.' },
                 new char[] { '.', '9', '8', '.', '.', '.', '.', '6', '.' },

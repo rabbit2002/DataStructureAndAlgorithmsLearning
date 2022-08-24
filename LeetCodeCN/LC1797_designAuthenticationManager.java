@@ -2,18 +2,12 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-/**
- * https://leetcode-cn.com/contest/biweekly-contest-48/problems/design-authentication-manager/
- *
- * @author RABBIT2002
- * @date 2021/3/20
- */
-public class E5694 {
+public class LC1797_designAuthenticationManager {
     int currentTime;
     int timeToLive;
     Map<String, Integer> map;
 
-    public E5694(int timeToLive) {
+    public LC1797_designAuthenticationManager(int timeToLive) {
         this.currentTime = 0;
         this.timeToLive = timeToLive;
         this.map = new HashMap<>();
@@ -21,7 +15,7 @@ public class E5694 {
 
     public static void main(String[] args) {
         // 1 0
-        E5694 e5694 = new E5694(5);
+        LC1797_designAuthenticationManager e5694 = new LC1797_designAuthenticationManager(5);
         e5694.renew("aaa", 1);
         e5694.generate("aaa", 2);
         e5694.countUnexpiredTokens(6);
@@ -33,7 +27,7 @@ public class E5694 {
         System.out.println();
 
         // 0 0 0 0
-        e5694 = new E5694(6);
+        e5694 = new LC1797_designAuthenticationManager(6);
         e5694.countUnexpiredTokens(5);
         e5694.countUnexpiredTokens(6);
         e5694.countUnexpiredTokens(7);
@@ -49,7 +43,7 @@ public class E5694 {
         System.out.println();
 
         // 0 0 4 3 3 2 2 2 2
-        e5694 = new E5694(13);
+        e5694 = new LC1797_designAuthenticationManager(13);
         e5694.renew("ajvy", 1);
         e5694.countUnexpiredTokens(3);
         e5694.countUnexpiredTokens(4);
@@ -72,7 +66,7 @@ public class E5694 {
         System.out.println();
 
         // 0 0 0 2 2 2 2 1 0 0 0 1 1 2 2 1 1 1 1 3 4 4 4 3 3 2 1 0 0
-        e5694 = new E5694(104);
+        e5694 = new LC1797_designAuthenticationManager(104);
         e5694.renew("ox", 50);
         e5694.countUnexpiredTokens(73);
         e5694.countUnexpiredTokens(87);

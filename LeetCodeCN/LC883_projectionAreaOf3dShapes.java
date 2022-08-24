@@ -1,11 +1,11 @@
-import java.util.Arrays;
-
-public class E883 {
+public class LC883_projectionAreaOf3dShapes {
     public static void main(String[] args) {
-        int a1 = new E883().projectionArea(new int[][]{new int[]{1, 2}, new int[]{3, 4}});
+        int a1 = new LC883_projectionAreaOf3dShapes()
+                .projectionArea(new int[][] { new int[] { 1, 2 }, new int[] { 3, 4 } });
         System.out.println(a1);
 
-        int a2 = new E883().projectionArea(new int[][]{new int[]{1, 0}, new int[]{0, 2}});
+        int a2 = new LC883_projectionAreaOf3dShapes()
+                .projectionArea(new int[][] { new int[] { 1, 0 }, new int[] { 0, 2 } });
         System.out.println(a2);
     }
 

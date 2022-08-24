@@ -1,9 +1,9 @@
-public class E299_BullsAndCows {
+public class LC299_BullsAndCows {
     public static void main(String[] args) {
         // 1A3B
-        System.out.println(new E299_BullsAndCows().getHint("1807", "7810"));
+        System.out.println(new LC299_BullsAndCows().getHint("1807", "7810"));
         // 1A1B
-        System.out.println(new E299_BullsAndCows().getHint("1123", "0111"));
+        System.out.println(new LC299_BullsAndCows().getHint("1123", "0111"));
     }
 
     public String getHint(String secret, String guess) {

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class E382 {
+public class LC382_linkedListRandomNode_A1 {
     public static void main(String[] args) {
         Solution obj = new Solution(new ListNode(1, new ListNode(2, new ListNode(3))));
         System.out.println(obj.getRandom());

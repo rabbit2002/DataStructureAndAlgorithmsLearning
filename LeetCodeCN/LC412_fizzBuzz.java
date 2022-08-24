@@ -1,14 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
-public class E412 {
+public class LC412_fizzBuzz {
     public static void main(String[] args) {
         int q1 = 15;
-        List<String> a1 = new E412().fizzBuzz(q1);
+        List<String> a1 = new LC412_fizzBuzz().fizzBuzz(q1);
         System.out.println(a1);
-
-
     }
 
     public List<String> fizzBuzz(int n) {

@@ -21,7 +21,7 @@ interface NestedInteger {
     public List<NestedInteger> getList();
 }
 
-public class E341_FlattenNestedListIterator {
+public class LC341_FlattenNestedListIterator {
     public static void main(String[] args) {
         // Your NestedIterator object will be instantiated and called as such:
         // NestedIterator i = new NestedIterator(nestedList);

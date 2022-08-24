@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class LCP40 {
     public static void main(String[] args) {
-        int[] q11 = new int[]{1,1,1};
+        int[] q11 = new int[] { 1, 1, 1 };
         int q12 = 3;
         int a1 = new LCP40().maxmiumScore(q11, q12);
         System.out.println(a1);

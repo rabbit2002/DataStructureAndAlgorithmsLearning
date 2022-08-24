@@ -1,16 +1,10 @@
 import java.util.Iterator;
 import java.util.TreeSet;
 
-/**
- * https://leetcode-cn.com/contest/biweekly-contest-48/problems/second-largest-digit-in-a-string/
- *
- * @author RABBIT2002
- * @date 2021/3/20
- */
-public class E5693 {
+public class LC1796_secondLargestDigitInAString {
     public static void main(String[] args) {
-        System.out.println(new E5693().secondHighest("dfa12321afd"));
-        System.out.println(new E5693().secondHighest("abc1111"));
+        System.out.println(new LC1796_secondLargestDigitInAString().secondHighest("dfa12321afd"));
+        System.out.println(new LC1796_secondLargestDigitInAString().secondHighest("abc1111"));
     }
 
     public int secondHighest(String s) {

@@ -1,8 +1,8 @@
 import java.util.Arrays;
 
-public class E905 {
+public class LC905_sortArrayByParity {
     public static void main(String[] args) {
-        int[] a1 = new E905().sortArrayByParity(new int[]{0});
+        int[] a1 = new LC905_sortArrayByParity().sortArrayByParity(new int[] { 0 });
         System.out.println(Arrays.toString(a1));
     }
 
