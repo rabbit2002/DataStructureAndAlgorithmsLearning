@@ -1,4 +1,4 @@
-package main
+package lc
 
 func pivotIndex(nums []int) int {
 	total := 0
@@ -15,8 +15,4 @@ func pivotIndex(nums []int) int {
 	}
 
 	return -1
-}
-
-func main() {
-	println(pivotIndex([]int{1, 7, 3, 6, 5, 6}))
 }
